@@ -54,14 +54,10 @@ function renderGame() {
         hasBlackJack = true
 
     }
-    else if (sum == 22)  {
+    else {
         message = "You are out of the game 😟"
         isAlive = false
 
-    }
-    else {
-        message = "do you want to get out"
-        isAlive = false
     }
     messageEl.textContent = message
 }
